@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavkader - Diyarlar</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Kavkader</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="story.html">Hikaye</a></li>
+                <li><a href="worlds.html" class="active">Diyarlar</a></li>
+                <li><a href="characters.html">Karakterler</a></li>
+                <li><a href="rules.html">Kurallar</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="worlds-intro">
+        <h2>Diyarların Tarihi</h2>
+        <p>Eski çağlardan beri Valtheria diyarları dört büyük imparatorluk tarafından yönetilmektedir. 
+        Bu imparatorluklar; Doğu, Kuzey, Güney ve Batı İmparatorlukları olarak bilinir. Her biri farklı kültürlere, 
+        güçlü liderlere ve derin tarihlere sahiptir. Bu sayfada, dilediğiniz imparatorluğa tıklayarak detaylı bilgiye ulaşabilirsiniz.</p>
+    </div>
+
+    <div class="worlds-map">
+        <p>İstediğiniz imparatorluktan bilgi almak için imparatorunun üzerine tıklayınız.</p>
+        <img src="../assets/images/imparatorlar.jpg" usemap="#imparatorluklar" alt="Kavkader Haritası" class="map-image">
+        <map name="imparatorluklar">
+            <area shape="rect" coords="0,0,300,800" href="east.html" alt="Doğu İmparatorluğu">
+            <area shape="rect" coords="300,0,600,800" href="north.html" alt="Kuzey İmparatorluğu">
+            <area shape="rect" coords="600,0,900,800" href="south.html" alt="Güney İmparatorluğu">
+            <area shape="rect" coords="900,0,1200,800" href="west.html" alt="Batı İmparatorluğu">
+        </map>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,324 @@
+/* styles/style.css */
+
+/* Genel Ayarlar */
+body {
+    font-family: 'Cinzel', serif;
+    color: #f0e6d2;
+    background: url('../assets/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #d4af37;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0e6d2;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+nav ul li a.active {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* Genel İçerik Kartları */
+.content-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+    text-align: center;
+}
+
+.content-card h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.content-card p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Diyarlar Sayfası */
+.worlds-intro {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+    text-align: center;
+}
+
+.worlds-map {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.worlds-map p {
+    font-size: 1.5em;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.map-image {
+    width: 100%;
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .content-card, .worlds-intro, .worlds-map {
+        max-width: 95%;
+    }
+    .map-image {
+        width: 100%;
+    }
+}
+/* Karakter Kartları */
+.character-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+}
+
+.character-card img {
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+}
+
+.character-info {
+    max-width: 400px;
+    margin: 0 20px;
+}
+
+.character-info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+.character-info p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+/* Karakter Kartları Sıralama */
+.character-card.left {
+    flex-direction: row;
+}
+
+.character-card.right {
+    flex-direction: row-reverse;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .character-card {
+        flex-direction: column;
+    }
+    .character-card img {
+        width: 100%;
+        height: auto;
+    }
+    .character-info {
+        margin: 20px 0;
+    }
+}
+/* Kurallar Sayfası Tasarımı */
+.rules-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.rule-warning {
+    font-family: 'Bangers', cursive;
+    font-size: 3em;
+    color: #ff1a1a;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+/* Korkutucu Titreşim Efekti */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+/* Hakkında ve İletişim Bölümü Tasarımı */
+.about-section, .contact-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+    color: #f0e6d2;
+}
+
+.about-section h2, .contact-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #d4af37;
+    text-align: center;
+}
+
+.about-section p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #d4af37;
+    font-size: 1.3em;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #ffcc00;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+/* İmparatorluklar Sayfası Tasarımı */
+.empire-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+    color: #f0e6d2;
+    text-align: justify;
+}
+.empire-container h2 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* -------------------------------
+   Oyuncular ve Karakterler Bölümü
+----------------------------------*/
+.about-players {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+}
+
+.dm-section, .players-section {
+    margin-bottom: 30px;
+}
+
+.dm-section h2, .players-section h2 {
+    color: #d4af37;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.player {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.player img {
+    width: 180px;
+    height: 240px;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+    transition: all 0.3s ease;
+}
+
+.player img:hover {
+    transform: scale(1.05);
+}
+
+.player p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #f0e6d2;
+}
+
+
+
+
+
+
+
+
+
+
